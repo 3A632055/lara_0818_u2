@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+//2. 設定從 app/Http/routes.php回傳這個頁面
+Route::get('home',function(){
+    return view('home');
+});

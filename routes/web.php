@@ -21,6 +21,13 @@ Route::get('home',function(){
 });
 */
 //6. 修改 app/Http/routes.php載入的頁面路徑
+/*
 Route::get('home',function(){
     return view('home.index');
 });
+*/
+Route::get('/home', 'HomeController@index');
+
+//練習 3：傳遞資料至 view 顯示
+//3. 設定 Route
+Route::get('hello/{name?}',['as'=>'hello.index','uses'=>'HelloController@index']);

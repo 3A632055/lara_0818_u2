@@ -12,7 +12,7 @@
     <h1>home</h1>
 </body>
 </html>
-!>
+-->
 @extends('layouts.master')
 @section('title','Home')
 @section('content')
